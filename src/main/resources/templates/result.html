@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Shortened URL</title>
+  <link rel="stylesheet" type="text/css" href="/css/Style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Here is your shortened URL</h1>
+  <div class="result-container">
+    <p>Your Shortened URL: </p>
+    <a th:href="${response.shortURL}" th:text="${response.shortURL}" class="result-url"></a>
+  </div>
+  <a href="/" class="back-btn">Back to Home</a>
+</div>
+</body>
+</html>
